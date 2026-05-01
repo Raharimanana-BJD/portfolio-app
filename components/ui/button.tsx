@@ -39,6 +39,7 @@ const buttonVariants = cva(
 export interface ButtonProps
   extends ButtonPrimitive.Props, VariantProps<typeof buttonVariants> {
   ripple?: boolean;
+  iconAfter?: React.ReactNode;
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
@@ -47,6 +48,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       className,
       variant = 'default',
       size = 'default',
+      iconAfter,
       ripple = true,
       onMouseDown,
       children,
@@ -87,6 +89,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         <span className="relative z-10 flex items-center gap-2">
           {children}
         </span>
+        {iconAfter && <span>{iconAfter}</span>}
 
         {/* Effet Ripple avec Framer Motion */}
         {ripple && (

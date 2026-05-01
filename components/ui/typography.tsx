@@ -5,8 +5,8 @@ import * as React from 'react';
 const typographyVariants = cva('block antialiased', {
   variants: {
     variant: {
-      h1: 'scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl font-heading',
-      h2: 'scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0 lg:text-4xl font-heading',
+      h1: 'scroll-m-20 text-5xl md:text-6xl md:leading-none font-extrabold tracking-tight lg:text-7xl font-heading',
+      h2: 'scroll-m-20 border-b pb-2 text-4xl md:leading-none md:text-5xl font-semibold tracking-tight first:mt-0 lg:text-6xl font-heading',
       h3: 'scroll-m-20 text-2xl font-semibold tracking-tight lg:text-3xl font-heading',
       h4: 'scroll-m-20 text-xl font-semibold tracking-tight lg:text-2xl font-heading',
       h5: 'text-lg font-semibold lg:text-xl font-heading',
