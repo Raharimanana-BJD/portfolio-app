@@ -1,4 +1,4 @@
-import heroImage from '@/app/assets/her.jpg';
+import { hero as heroImage } from '@/app/assets';
 import Image from 'next/image';
 import type { FC } from 'react';
 import { Button } from '../ui/button';

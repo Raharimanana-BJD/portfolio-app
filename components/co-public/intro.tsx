@@ -4,7 +4,7 @@ import { Typography } from '../ui/typography';
 const Intro: FC = () => {
   return (
     <section className="mt-12 py-24 md:mt-16 md:pt-32 lg:mt-20 lg:py-32">
-      <div className="container lg:px-20">
+      <div className="container pl-12">
         <Typography
           variant={'h2'}
           className="leading-tight font-normal lg:w-[80%]"
