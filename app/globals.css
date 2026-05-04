@@ -139,10 +139,14 @@
       @apply px-12;
     }
   }
+
   @media (width >= 1280px) {
     .container {
-      @apply max-w-350 px-4;
+      @apply max-w-350 px-20;
     }
+  }
+  .section {
+    @apply p-16;
   }
 }
 

@@ -3,7 +3,7 @@ import { Typography } from '../ui/typography';
 
 const Intro: FC = () => {
   return (
-    <section className="mt-12 py-24 md:mt-16 md:pt-32 lg:mt-20 lg:py-32">
+    <section className="section mt-12 md:mt-16 lg:mt-20">
       <div className="container pl-12">
         <Typography
           variant={'h2'}

@@ -21,9 +21,18 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn('h-full', 'antialiased', 'font-sans', archivo.variable)}
+      className={cn(
+        'h-full',
+        'antialiased',
+        'font-sans',
+        archivo.variable,
+        'selection:text-foreground selection:bg-primary'
+      )}
     >
-      <body className="bg-background flex min-h-svh flex-col font-sans">
+      <body
+        className="bg-background flex min-h-svh flex-col font-sans"
+        suppressHydrationWarning
+      >
         {children}
       </body>
     </html>

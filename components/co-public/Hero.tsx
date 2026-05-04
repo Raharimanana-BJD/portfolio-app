@@ -20,7 +20,8 @@ const Hero: FC = () => {
             <div className="mt-10 flex flex-col items-start gap-6 md:flex-row md:items-center">
               <Button
                 size={'lg'}
-                variant="secondary"
+                className="size-11 w-fit text-base"
+                variant="default"
                 iconAfter={
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +41,12 @@ const Hero: FC = () => {
               >
                 <span>View my work</span>
               </Button>
-              <Button ripple={false} variant="link">
+              <Button
+                ripple={false}
+                size={'lg'}
+                className="size-11 w-fit text-base"
+                variant="link"
+              >
                 Let&apos;s talk
               </Button>
             </div>

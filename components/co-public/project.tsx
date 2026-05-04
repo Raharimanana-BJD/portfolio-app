@@ -40,14 +40,16 @@ const projectItems: projectItemsProps[] = [
 
 const Project: FC = () => {
   return (
-    <section>
-      <div className="container p-12 md:py-32 lg:py-40">
-        <Typography variant={'h2'} className="leading-tight font-normal">
+    <section className="section">
+      <div className="container">
+        <Typography
+          variant={'h2'}
+          className="border-b-0 leading-tight font-normal"
+        >
           Select works
         </Typography>
         <div className="mt-10 md:mt-16 lg:mt-20">
           {projectItems.map(({ name, image, id, url }) => (
-            // eslint-disable-next-line @next/next/no-html-link-for-pages
             <a
               key={id}
               href={url}
